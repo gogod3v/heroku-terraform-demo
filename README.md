@@ -8,6 +8,9 @@ Heroku + Terraform demo
 git clone git@github.com:gogod3v/heroku-terraform-demo.git
 cd heroku-terraform-demo
 
+# install the required terraform version, e.g. via tfenv:
+tfenv install 0.12.18
+
 terraform init
 # register & manage Heroku API keys at https://dashboard.heroku.com/account/applications
 terraform plan -var-file terraform.tfvars -out=/tmp/plan
