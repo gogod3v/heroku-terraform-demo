@@ -31,7 +31,8 @@ terraform plan -var-file terraform.tfvars -out=/tmp/plan
 terraform apply /tmp/plan
 # Check that it's changed on Heroku.
 
-
+# cleanup:
+terraform destroy
 ```
 
 Example tfvars file:
